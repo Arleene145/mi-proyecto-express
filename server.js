@@ -39,3 +39,7 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch(err => console.log(err));
 
 app.listen(5000, () => console.log("Servidor corriendo en puerto 5000"));
+
+
+const authRoutes = require("./routes/authRoutes");
+app.use("/api/auth", authRoutes);
