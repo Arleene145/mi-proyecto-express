@@ -43,3 +43,7 @@ app.listen(5000, () => console.log("Servidor corriendo en puerto 5000"));
 
 const authRoutes = require("./routes/authRoutes");
 app.use("/api/auth", authRoutes);
+
+
+const habitRoutes = require("./routes/habitRoutes");
+app.use("/api/habits", habitRoutes);
